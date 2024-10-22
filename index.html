@@ -5,39 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ønskesky Links</title>
     <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and overall layout */
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
             color: #333;
+            line-height: 1.6;
+            padding: 20px;
         }
+
         h1 {
             text-align: center;
-            margin-top: 50px;
+            margin-bottom: 20px;
             color: #2c3e50;
         }
+
+        /* Container for the main content */
         .container {
             max-width: 900px;
-            margin: 20px auto;
+            margin: 0 auto;
             padding: 20px;
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
+        /* Link section styling */
+        .link-section {
+            margin-bottom: 20px;
+        }
+
         p {
             font-size: 18px;
-            margin: 10px 0;
+            margin-bottom: 10px;
         }
+
         a {
             color: #2980b9;
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
-        .link-section {
-            margin-bottom: 20px;
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+                margin: 10px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            a {
+                word-wrap: break-word;
+            }
+        }
+
+        /* Further responsiveness for very small screens */
+        @media (max-width: 480px) {
+            p {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
